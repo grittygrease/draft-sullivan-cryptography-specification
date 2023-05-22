@@ -204,13 +204,14 @@ Table of Contents
 
    *  Using straightforward language and terminology: Write the
       specification using clear, concise language, and consistent and
-      broadly understood terminology.  Avoid overly technical jargon,
-      and define any terms that may be unfamiliar to some readers.
+      broadly understood terminology.
 
-   *  Limiting scope: Keep the specification focused on the primary
-      problem or use case, i.e., avoid feature creep.  Avoid introducing
-      unrelated or peripheral topics, as this can create confusion and
-      detract from the primary focus.
+   *  Avoid overly technical jargon, and define any terms that may be
+      unfamiliar to some readers.  Limiting scope: Keep the
+      specification focused on the primary problem or use case, i.e.,
+      avoid feature creep.  Avoid introducing unrelated or peripheral
+      topics, as this can create confusion and detract from the primary
+      focus.
 
    *  Providing clear examples and diagrams: Include examples and visual
       aids, such as diagrams or visualizations, to help illustrate
@@ -596,10 +597,8 @@ Table of Contents
       processes, ensuring that all required inputs, outputs, and
       intermediate steps are defined.  Where exceptional cases occur,
       those should be noted and recommended error-handling steps should
-      be given.
-
-   *  Include test vectors to help implementers verify the correctness
-      of their implementations.
+      be given.  Include test vectors to help implementers verify the
+      correctness of their implementations.
 
    *  Describe best practices for representing components of the
       specification in code, addressing exceptional cases and
@@ -963,8 +962,6 @@ Table of Contents
               <https://www.rfc-editor.org/rfc/rfc8874>.
 
 Acknowledgments
-
-   TODO acknowledge.
 
 Authors' Addresses
 
