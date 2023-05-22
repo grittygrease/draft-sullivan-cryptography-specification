@@ -382,8 +382,8 @@ Table of Contents
    in different contexts or disciplines.  In such cases, specification
    authors should clarify the intended meaning of a symbol within the
    context of the specification.  For example, when describing group
-   operations using multiplicative notation, the multiplication symbol ×
-   should be used instead of the asterisk symbol.
+   operations using multiplicative notation, the multiplication symbol *
+   should be used instead of the x symbol.
 
 3.3.1.3.  Explicitly Defining Custom Operations
 
@@ -631,7 +631,7 @@ Table of Contents
    reference implementation is written in a way that is clearly
    consistent with the specification.
 
-   It’s possible to include too many test vectors in a specification,
+   It's possible to include too many test vectors in a specification,
    which increases document length and decreases readability.  Authors
    should provide test vectors that cover:
 
@@ -650,7 +650,7 @@ Table of Contents
    point matches the pre-image of a hash value that was randomly
    generated, finding a test vector to trigger that case would require
    the ability to compute a hash pre-image, which is deemed unfeasible
-   for sufficiently strong hash functions.  Exceptional cases that don’t
+   for sufficiently strong hash functions.  Exceptional cases that don't
    have test vectors should be explicitly noted in the algorithm
    description.
 
@@ -858,27 +858,27 @@ Table of Contents
    The test vectors included in this document were not comprehensive and
    did not cover all the cases described in the algorithm, resulting in
    multiple incompatible implementations.  There were also issues with a
-   “greater than” comparison which should have been a “greater than or
-   equal to” which were not explicitly covered by the test vectors.
+   "greater than" comparison which should have been a "greater than or
+   equal to" which were not explicitly covered by the test vectors.
 
 8.2.  Unnecessary Branching
 
    Some components of the cryptographic algorithms in EdDSA had branches
    that sometimes led to different implementation behavior.  In
    particular, in the verification step for Ed25519, the following text
-   exists: “Check the group equation [8][S]B = [8]R + [8][k]A'.  It's
-   sufficient, but not required, to instead check [S]B = R + [k]A'.”
+   exists: "Check the group equation [8][S]B = [8]R + [8][k]A'.  It's
+   sufficient, but not required, to instead check [S]B = R + [k]A'."
    This alternative branch has led to disagreement between what
    signatures are valid or not, which has a profound effect on
-   applications.  Minimizing and removing similar branches – especially
-   those that exist in the name of performance – should be a goal of all
+   applications.  Minimizing and removing similar branches - especially
+   those that exist in the name of performance - should be a goal of all
    cryptographic specifications.
 
 8.3.  Compatibility and Modularity
 
    EdDSA is a variant of the Schnorr signature scheme, but with some
    small variations that make it incompatible with other related Schnorr
-   signature schemes.  This includes a “clamping” operation that makes
+   signature schemes.  This includes a "clamping" operation that makes
    EdDSA keys and operations incompatible with x25519 ([RFC7748]).  Many
    of the issues in the specification derive from the fact that the
    specification was written to match an existing implementation rather
