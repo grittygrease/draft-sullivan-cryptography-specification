@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-06-04T00:08:53.021964+00:00",
+  "timestamp": "2023-06-06T00:08:00.457480+00:00",
   "repo": "grittygrease/draft-sullivan-cryptography-specification",
   "labels": [
     {
@@ -49,7 +49,24 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 2,
+      "id": "I_kwDOJkwUas5nzjlm",
+      "title": "Avoiding source code",
+      "url": "https://github.com/grittygrease/draft-sullivan-cryptography-specification/issues/2",
+      "state": "OPEN",
+      "author": "yaronf",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Under *Precision*, after the bullet \"Employ formal notation or pseudocode\", I suggest adding:\r\n\r\n> Avoid programming language code: while well written pseudocode is generally understandable to all relevant stakeholders, direct use of source code limits your effective audience to those who are skilled in a particular programming language. If the specification writer is highly skilled in a particular language, they may not realize what areas of the code are hard for readers to follow. Moreover, this practice can easily introduce dependencies on implementation details, e.g. when referencing library functions. ",
+      "createdAt": "2023-06-05T11:23:21Z",
+      "updatedAt": "2023-06-05T11:23:21Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
